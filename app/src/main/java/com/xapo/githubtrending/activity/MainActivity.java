@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements RepositoryListFra
         //Otherwise we are  on the phone, so we just replace Fragments
         if (findViewById(R.id.detail_fragment_container) == null) {
             getSupportFragmentManager().beginTransaction()
- //                   .setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right)
+                    .setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right)
                     .replace(R.id.repository_list_fragment_container, repositoryDetailsFragment)
                     .addToBackStack("RepositoryDetailsFragment")
                     .commit();
